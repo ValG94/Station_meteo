@@ -1,0 +1,65 @@
+body{
+    text-align: center;
+    width: 90vw;
+    margin: auto;
+}
+
+h1{
+    padding: 1rem;
+    margin: 1rem;
+    background-color:  midnightblue ;
+    font-family: "Arial Black", sans-serif;
+    color:dodgerblue;
+}
+
+h2{
+    font-family: Arial, sans-serif;
+    font-size: large;
+    color: #337ab7;
+    }
+label {
+    font-family: Arial, sans-serif;
+     color: #337ab7;
+}
+#titre {text-align: center;
+    color: midnightblue;
+    font-family: Arial, sans-serif;
+    margin-block-start: 0.5em;
+
+}
+
+.text-hover:hover{
+    font-family: Arial, sans-serif;
+
+    color: #337ab7;
+}
+
+#cadre{
+    margin: auto;
+    text-align: center;
+    Border : 100px;
+    border: dashed blue;
+}
+
+#tab-date{
+    display: none;
+}
+
+.espacement-bas{
+    margin-bottom: 2%;
+}
+
+table {
+    margin: 1rem auto;
+    border-collapse: collapse;
+}
+
+table, td, th{
+    margin: 1rem auto;
+    border: 1px;
+    border: bisque solid;
+}
+
+td, th{
+    padding: 0.3px;
+}

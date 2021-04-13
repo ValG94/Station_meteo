@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stationmeteo.css">
+    <title>Station Météo</title>
+</head>
+<header>
+    <h1>Bienvenue dans la station météo de la promo 🌞</h1>
+</header>
+<body>
+<div id="titre">
+    <div id="derniere_mesures" class="espacement-bas text-hover"> Dernière mesures</div>
+    <div id="top_mesures" class="espacement-bas text-hover">Top mesures</div>
+    <div id="Tableaux_mesures" class="espacement-bas text-hover">Tableaux des mesures</div>
+    <div id="Graphique" class="espacement-bas text-hover">Graphique des mesures</div>
+
+<div id="cadre">
+    <h2>Quelle mesure vous interesse ?</h2>
+    <label for="type-select">Type de mesure</label>
+    <select id="type-select" class="espacement-bas">
+        <option value="TEMPERATURE">Température</option>
+        <option value="PRESSURE">Pression</option>
+        <option value="HUMIDITY">Humidité</option>
+        <option value="CO2">CO2</option>
+        <option value="VOC">VOC</option>
+
+    </select>
+
+
+</div>
+
+<div>
+    <p></p>
+</div>
+
+<div id="affichage">
+
+</div>
+
+</div>
+
+<div id="tab-date">
+    <label for="input-date"> Date de début : </label>
+    <input id="input-date" type="datetime-local" required>
+    <label for="input-datefin"> Date de fin : </label>
+    <input id="input-datefin" type="datetime-local" required>
+    <button id="form-button" type="click"> Rafraichir les dates </button>
+<table>
+    <thead>
+    <tr>
+        <th>Date</th>
+        <th>Valeur de mesure</th>
+
+    </tr>
+    </thead>
+    <tbody id= "table-body">
+    </tbody>
+</table>
+</div>
+
+<script src="stationmeteo.js"></script>
+</body>
+</html>
