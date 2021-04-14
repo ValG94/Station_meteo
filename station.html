@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="stationmeteo.css">
     <title>Station Météo</title>
@@ -10,12 +11,20 @@
 </header>
 <body>
 <div id="titre">
-    <div id="derniere_mesures" class="espacement-bas text-hover"> Dernière mesures</div>
+    <!--<div id="derniere_mesures" class="espacement-bas text-hover"> Dernière mesures</div>
     <div id="top_mesures" class="espacement-bas text-hover">Top mesures</div>
     <div id="Tableaux_mesures" class="espacement-bas text-hover">Tableaux des mesures</div>
-    <div id="Graphique" class="espacement-bas text-hover">Graphique des mesures</div>
+    <div id="Graphique" class="espacement-bas text-hover">Graphique des mesures</div>-->
 
-<div id="cadre">
+    <div id="derniere_mesures" class="espacement-bas text-hover"><a style="text-decoration:none" href="#top_mesure"> Dernière mesures</a></div>
+    <div id="top_mesures" class="espacement-bas text-hover"><a style="text-decoration:none" href="#top_mesure">Top mesures</a></div>
+    <div id="Tableaux_mesures" class="espacement-bas text-hover"><a style="text-decoration:none" href="#top_mesure">Tableaux des mesures</a></div>
+    <div id="Graphique" class="espacement-bas text-hover"><a style="text-decoration:none" href="#top_mesure">Graphique des mesures</a></div>
+
+</div>
+
+
+    <div id="cadre">
     <h2>Quelle mesure vous interesse ?</h2>
     <label for="type-select">Type de mesure</label>
     <select id="type-select" class="espacement-bas">
@@ -26,7 +35,6 @@
         <option value="VOC">VOC</option>
 
     </select>
-
 
 </div>
 
@@ -46,9 +54,11 @@
     <label for="input-datefin"> Date de fin : </label>
     <input id="input-datefin" type="datetime-local" required>
     <button id="form-button" type="click"> Rafraichir les dates </button>
+</div>
+<div id="endTab">
 <table>
     <thead>
-    <tr>
+    <tr class="espacement-bas">
         <th>Date</th>
         <th>Valeur de mesure</th>
 
@@ -59,6 +69,15 @@
 </table>
 </div>
 
+<div id ="graph">
+    <br class ="espacement-bas">
+<!--    Insertion du graph dans notre html-->
+    <canvas id="mychart1" width="600" height="300"></canvas>
+    </br>
+</div>
+
+
 <script src="stationmeteo.js"></script>
+
 </body>
 </html>

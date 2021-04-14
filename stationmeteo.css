@@ -21,7 +21,8 @@ label {
     font-family: Arial, sans-serif;
      color: #337ab7;
 }
-#titre {text-align: center;
+#titre {
+    text-align: center;
     color: midnightblue;
     font-family: Arial, sans-serif;
     margin-block-start: 0.5em;
@@ -30,7 +31,6 @@ label {
 
 .text-hover:hover{
     font-family: Arial, sans-serif;
-
     color: #337ab7;
 }
 
@@ -38,11 +38,14 @@ label {
     margin: auto;
     text-align: center;
     Border : 100px;
-    border: dashed blue;
+    border: dashed midnightblue;
 }
 
 #tab-date{
+    margin-bottom: auto;
+    padding-bottom: 1rem;
     display: none;
+
 }
 
 .espacement-bas{
@@ -56,10 +59,24 @@ table {
 
 table, td, th{
     margin: 1rem auto;
-    border: 1px;
-    border: bisque solid;
+    border: 0.3px;
+    border: #337ab7 solid;
+    font-family: Arial;
 }
 
 td, th{
     padding: 0.3px;
+}
+#endTab{
+    display: none;
+}
+
+
+#mychart1{
+    margin-inside: 10px;
+    display: none;
+    border-color: orange;
+    border-style: dashed;
+    padding: 5px;
+
 }
