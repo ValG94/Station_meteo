@@ -43,8 +43,11 @@ label {
 
 #tab-date{
     margin-bottom: auto;
+    padding-top: 1rem;
     padding-bottom: 1rem;
     display: none;
+    border: 100px;
+    border: dashed orange;
 
 }
 
@@ -55,6 +58,7 @@ label {
 table {
     margin: 1rem auto;
     border-collapse: collapse;
+
 }
 
 table, td, th{
@@ -69,6 +73,10 @@ td, th{
 }
 #endTab{
     display: none;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
 
 

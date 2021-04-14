@@ -131,7 +131,7 @@ function affichageTabbis(baseApiUrl) {
 
             for (let i = 0; i < result.length; i++) {
                 listbase.push(result[i].value)
-                listeDate.push(result[i].measureDate)
+                listeDate.push(result[i].measureDate.slice())
             }
 
          //Configaration/mise en forme du graph
